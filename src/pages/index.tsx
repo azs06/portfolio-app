@@ -20,7 +20,7 @@ const Home = () => {
         {/* Profile Image */}
         <div className="mb-8">
           <img 
-            src="/api/placeholder/200/200"
+            src="https://avatars.githubusercontent.com/u/1593663?v=4"
             alt="Profile"
             className="w-32 h-32 rounded-full mx-auto object-cover"
           />
