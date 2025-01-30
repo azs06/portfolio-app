@@ -1,17 +1,16 @@
 import React from 'react';
 import { Twitter, Github } from 'lucide-react';
+import Link from 'next/link'
 
 const Home = () => {
   return (
-    <div className="min-h-screen bg-white">
+    <div className="min-h-screen bg-gray-50">
       {/* Navigation */}
       <nav className="flex justify-between items-center p-6">
-        <div className="text-xl font-semibold">Atiquzzaman Soikat</div>
-        <div className="flex gap-6">
-          <a href="#" className="hover:text-gray-600">Work</a>
-          <a href="#" className="hover:text-gray-600">About</a>
-          <a href="#" className="hover:text-gray-600">Blog</a>
-          <a href="#" className="hover:text-gray-600">Contact</a>
+        <div className="text-xl font-semibold text-gray-700">Md Atiquzzaman Soikat</div>
+        <div className="flex gap-6 hidden">
+          <Link className="text-gray-700 hover:text-gray-600" href="/about">About</Link>
+          <Link className="text-gray-700 hover:text-gray-600" href="/blog">Blog</Link>
         </div>
       </nav>
 
@@ -27,8 +26,8 @@ const Home = () => {
         </div>
 
         {/* Profile Info */}
-        <h1 className="text-3xl font-semibold mb-2">Md. Atiquzzaman Soikat</h1>
-        <h2 className="text-xl text-gray-600 mb-2">JavaScript Engineer</h2>
+        <h1 className="text-3xl font-semibold mb-2 text-gray-700">Md. Atiquzzaman Soikat</h1>
+        <h2 className="text-xl text-gray-600 mb-2">Senior Software Engineer</h2>
         <p className="text-gray-600 mb-4">Lifelong learner, Tech Enthusiast, Geek for life</p>
 
         {/* Tags */}
